@@ -21,7 +21,13 @@ module.exports = {
   },
   devtool: "cheap-module-eval-source-map",
   devServer: {
-    contentBase: path.join(__dirname, "public")
+    contentBase: path.join(__dirname, "public"),
+
+    /* This is for BrowserRouter and will teel the dev-server to always serve up the index.html file for all unknown 404's 
+    
+    This tells the web-server that we will be handling routing via our client-side code and that should return the index for all 404 routes
+    */
+    historyApiFallback: true
   }
 };
 
