@@ -6,3 +6,5 @@ import "./styles/styles.scss";
 import "normalize.css/normalize.css";
 
 ReactDOM.render(<p>This is my boilerplate</p>, document.getElementById("app"));
+
+// a new comment
